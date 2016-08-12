@@ -4,9 +4,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>io.springside</groupId>
-		<artifactId>springside-parent</artifactId>
+		<artifactId>springside-modules</artifactId>
 		<version>5.0.0-SNAPSHOT</version>
-		<relativePath>../modules/parent/</relativePath>
+		<relativePath>../modules/</relativePath>
 	</parent>	
 	<groupId>io.springside.examples</groupId>
 	<artifactId>springside-examples</artifactId>

@@ -30,7 +30,7 @@ public class ThreadsTest {
 		ExecutorService pool = Executors.newSingleThreadExecutor();
 		Runnable task = new Task(logger, 500, 0);
 		pool.execute(task);
-		Threads.gracefulShutdown(pool, 1000, TimeUnit.MILLISECONDS);
+		Threads.gracefulShutdown(pool, 10000, TimeUnit.MILLISECONDS);
 		assertThat(pool.isTerminated()).isTrue();
 		assertThat(appender.getFirstLog()).isNull();
 
